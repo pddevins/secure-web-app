@@ -6,7 +6,12 @@ Stormpath / Spring Boot MVC web application sample.
 
 ## open endpoints
 /
+
 /admin
+
 /restricted
+
 /login
+
 /logout
+
