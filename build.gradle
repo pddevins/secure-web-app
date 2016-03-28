@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.0.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'spring-boot'
+
+group 'com.developingpatrick'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+sourceCompatibility = 1.8
+
+dependencies {
+    compile group: 'com.stormpath.spring', name: 'stormpath-default-spring-boot-starter', version:'1.0.RC6'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
